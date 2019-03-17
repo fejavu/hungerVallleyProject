@@ -4,20 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Form Coding</title>
 </head>
 <body>
-	<div id="article" class="first">
-		<h1>Debut of shortcut</h1>
-		<p>Paragraph One</p>
-		<ul>
-			<li>item 1</li>
-			<li>item 2</li>
-			<li>item 3</li>
-		</ul>
-	</div>
-	<input type="text" disabled><br>
-	<input type="checkbox" name="shenzhen" checked id="">SHENZHEN
+	<!-- <input type="text" disabled><br> -->
+<!-- 	<input type="checkbox" name="shenzhen" checked id="">SHENZHEN
 	<input type="checkbox" name="beijing" id="">BEIJING
 	<input type="checkbox" name="guangzhou" id="">GUANGZHOU
 
@@ -51,22 +42,42 @@
 			</tr>
 		</tbody>
 	</table>
-	&lt;div&gt;&lt;&sol;div&gt;
-	<form action="/abc" method="get">
+	&lt;div&gt;&lt;&sol;div&gt; -->
+	<form action="/getInfo" method="get">
 		<div class="username">
-			<label for="username">UserName</label>
-			<input id="username" type="text" class="username" placeholder="UserName">
+			<label for="username">姓名：</label>
+			<input id="username" type="text" class="username" placeholder="用户名">
 		</div>
 		<div classSubmit="password">
-			<label for="password">Password</label>
-			<input type="text" id="password" class="password" placeholder="password">
+			<label for="password">密码：</label>
+			<input type="text" id="password" class="password" placeholder="密码">
 		</div>
-		<div class="gender"><label>Gender</label>
-			<input type="radio" name="gender" value="male">Male
-			<input type="radio" name="gender" value="female">Female
+		<div class="gender"><label>性别：</label>
+			<input type="radio" name="gender" value="male">男
+			<input type="radio" name="gender" value="female">女
 		</div>
-		<div class="submit">
-			<button>Submit</button>
+		<div class="prefer"><label>取向：</label>
+			<input type="radio" name="prefer" value="male" checked>男
+			<input type="radio" name="prefer" value="female">女
+		</div>
+		<div class="hobby">
+			<label name="hobby" value="hobby">爱好：</label>
+			<input type="checkbox" name="data" id="">data
+			<input type="checkbox" name="travel" id="" checked>旅行
+			<input type="checkbox" name="pet" id="" checked>宠物
+		</div>
+		<div class="textarea"><label name="comments">评论：</label>
+			<textarea name="comments" id="" cols="30" rows="10" placeholder="ddd">ddd
+			</textarea>
+		</div>
+		<div class="select">
+			<label>我的car：</label>
+			<select>
+				<option value="saab">萨博</option>
+				<option value="lexus">雷克萨斯</option>
+				<option value="benz">奔驰</option>
+			</select>
+			<button>提交</button>
 		</div>
 	</form>
 </body>
