@@ -1,0 +1,185 @@
+/* CSS RESET */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* COMMON STYLE */
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.btn {
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(31,135,217);
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+.btn:hover {
+    opacity: 0.5;
+}
+
+body {
+    font: 14px/1.5 arial;
+    background-color: #eee;
+    /* color: #ccc; */
+}
+
+/* MAIN STYLE */
+html,body{
+    height: 100%;
+}
+
+header {
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    background: black url('Mt. Fuji.jpg') 
+    center no-repeat; 
+    background-size: cover;
+
+}
+/* 
+header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background:#fff;
+    opacity: 0.2;
+} */
+
+header .logo{
+    font-size: 30px;
+    color:#fff;
+    float: left;    
+    padding: 6px;
+    margin-top: 10px;
+}
+
+header .logo a:hover{
+    color: rgb(31,135,217);
+}
+
+header nav ul {
+    float: right;
+    margin: 20px;
+}
+
+header nav li {
+    float: left;
+}
+
+header nav a {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 3px;
+    margin-left: 8px;
+}
+
+header nav a:hover {
+    background: rgb(31,135,217);
+}
+
+.layout {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+
+header .intro h2 {
+    font-size: 36px;
+}
+
+header .intro h3 {
+    font-size: 54px;
+    margin-top: 20px;
+}
+
+section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+section > h2 {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+section .layout > p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+section > ul .iconfont {
+    color: rgb(31,135,217);
+    font-size: 65px;
+}
+section > ul > li {
+    width: 33.33%;
+    float: left;
+    padding: 10px 8px;
+}
+
+section > ul h3 {
+    font-size: 20px;
+}
+
+section > ul p {
+    margin-top: 20px;
+}
+
+section .port figure{
+    width: calc(33.33% - 20px);
+    /* height: 240px; */
+    margin: 10px;
+    float: left;
+}
+section .port a {
+    display: block;
+    height: 180px;
+}
+section .port img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+section .port figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+section .port p {
+    color: #555;
+    margin-top: 4px;
+}
