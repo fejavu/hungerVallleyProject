@@ -55,18 +55,6 @@ header {
     background-size: cover;
 
 }
-/* 
-header::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background:#fff;
-    opacity: 0.2;
-} */
 
 header .logo{
     font-size: 30px;
@@ -103,7 +91,7 @@ header nav a:hover {
 }
 
 .layout {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -131,10 +119,15 @@ section {
 }
 
 section > h2 {
-    margin-top: 107px;
     font-size: 40px;
 }
 
+section > p {
+    margin-bottom: 30px;
+}
+section:nth-of-type(2n) h2 {
+    margin-top: 40px; 
+}
 section .layout > p {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -175,10 +168,11 @@ section .port a {
     display: block;
     height: 180px;
 }
+
 section .port img {
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
 }
 section .port figcaption {
     font-size: 18px;
@@ -192,8 +186,123 @@ section .port p {
     font-style: italic;
 }
 
+section:nth-of-type(2n+1) {
+    width: 100%;
+    background-color:white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+section .about > li::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 section .about img {
     width: 180px;
     border-radius: 50%;
     border: 4px solid rgb(31,135,217);
+}
+section .about > li {
+    position: relative;
+    margin-top: 40px;
+}
+section .about > li:nth-child(even) {
+    padding-left: calc(50% - 90px);
+    text-align: left;
+}
+section .about > li:nth-child(odd) {
+    padding-right: calc(50% - 90px);
+    text-align: right;
+}
+section .about > li:nth-child(odd) img {
+    float: right;
+}
+section .about > li:nth-child(even) img {
+    float: left;
+}
+ section .about > li:nth-child(even) dl {
+    margin-left: 200px;
+}
+section .about > li:nth-child(odd) dl {
+    margin-right: 200px;
+}
+
+section .about dt {
+    font-size: 20px;
+    font-weight: bolder;
+}
+section .about dd:first-of-type{
+    font-weight: bold;
+}
+section .about > li::before {
+    content: '';
+    display: inline-block;
+    height: 40px;
+    width: 4px;
+    position: absolute;
+    left: 50%;
+    top:180px;
+    background-color:rgb(31,135,217);
+}
+section .about > li:last-child {
+    margin-bottom: 70px;
+}
+section .about > li:last-child::before {
+    content: '';
+    display: none;
+    height: 0px;
+}
+section .team > li {
+    width: 33.33%;
+    float: left;
+    padding: 10px 8px;
+}
+section .team > li img {
+    border-radius: 50%;
+    border: 8px rgba(31,135,217,1) solid;
+}
+section .team h3 {
+    margin-top: 20px;
+}
+section .team p {
+    margin-top: 5px;
+}
+section .icon li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 35px;
+    color: gray;
+}
+
+/* icon hover  */
+section .icon li:hover {
+    cursor: pointer;
+}
+section .icon .icon-tuitetwitter43:hover{
+    color: #55acee;
+}
+section .icon .icon-wechat:hover{
+    color: #09b83e;
+}section .icon .icon-tian7_facebook:hover{
+    color: #3b5999;
+}
+
+section p:nth-of-type(2) {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    width: 700px;
+    margin: 30px auto 100px auto;
+}
+
+section .wrap {
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background-color:white;
+}
+section .wrap a {
+    width: 25%;
 }
