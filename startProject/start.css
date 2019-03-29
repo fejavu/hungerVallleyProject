@@ -277,15 +277,16 @@ section .icon li {
 }
 
 /* icon hover  */
-section .icon li:hover {
+ .icon li:hover {
     cursor: pointer;
 }
-section .icon .icon-tuitetwitter43:hover{
+.icon .icon-tuitetwitter43:hover{
     color: #55acee;
 }
-section .icon .icon-wechat:hover{
+.icon .icon-wechat:hover{
     color: #09b83e;
-}section .icon .icon-tian7_facebook:hover{
+}
+.icon .icon-tian7_facebook:hover{
     color: #3b5999;
 }
 
@@ -296,8 +297,7 @@ section p:nth-of-type(2) {
     width: 700px;
     margin: 30px auto 100px auto;
 }
-
-section .wrap {
+.wrap {
     padding: 20px;
     margin-bottom: 50px;
     border-radius: 5px;
@@ -305,4 +305,65 @@ section .wrap {
 }
 section .wrap a {
     width: 25%;
+}
+
+.contact {    
+    height: 100%;
+    min-height: 600px;
+    background: black url('google-earth-view-6355.jpg') 
+    center no-repeat; 
+    background-size: cover;
+    text-align: center;
+}
+
+.form,
+.message {
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+}
+.form input {
+    padding: 20px;    
+    float: right;
+    width: 340PX;
+    height: 55px;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.message textarea{
+    padding: 20px;    
+    margin-top: 20px;
+    margin-left: -69px;
+    height: 205px;
+    width: 340px;
+    border-radius: 7px;
+}
+
+.form input:focus,
+.message textarea:focus {
+    border: 2px solid rgb(31,135,217);
+}
+footer {
+    text-align: center;
+    width: 1000px;
+    margin: 20px auto;
+}
+footer::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+footer > ul > li {
+    width: 33.33%;
+    float: left;
+}
+footer .icon > li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 7px;
+    margin-top: -15px;
 }
