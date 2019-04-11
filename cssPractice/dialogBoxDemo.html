@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+  <style>
+    .layout{
+      margin:50px auto;
+      width:600px;
+    }
+    
+    .box{
+      padding:1px 20px;
+      margin-top:30px;
+      position:relative;
+      border-radius:8px;
+      color:white; 
+      font-family:"Microsoft JhengHei";
+      /* font-family:'Noto Sans TC', sans-serif; */ 
+      /* font-weight:bold; */
+    }
+    
+    .box:hover{
+      box-shadow:10px 10px 10px rgba(100,150,150,0.5);
+      cursor:pointer;
+    }
+   
+    .box h1{
+      margin-top:20px;
+      font-size:35px ;
+      line-height:1;
+    }
+    
+    .box span{
+      font-size:24px;
+      font-weight:bold;
+      position:absolute; 
+      top:11px;
+      right:19px;
+      cursor: pointer;
+    }
+    
+    .box span:hover{
+      color:#333;
+    }
+    
+    .box.green{
+      background-color:#4CAF50;
+    }    
+
+    
+    .box.blue{
+      background-color:#2196F3;
+    }    
+    
+    .box.red{
+      background-color:#f44336;
+    }    
+    
+    .box.orange{
+      background-color:#ff9800;
+    }  
+  </style>
+  
+</head>
+<body>
+  <div class="layout">
+    <div class="box green">
+        <h1>恭喜你</h1>
+        <span>×</span>
+      <p>获得本周学霸，继续加油吧</p>
+    </div>  
+
+    <div class="box blue">
+        <h1>通知</h1>
+        <span>×</span>
+      <p>晚上上课，不要忘了</p>
+    </div>  
+    
+    <div class="box red">
+        <h1>天啊</h1>
+        <span>×</span>
+      <p>竟然几天没做任务</p>
+    </div>  
+    
+    <div class="box orange">
+        <h1>警告</h1>
+        <span>×</span>
+      <p>学如逆水行舟，不进则退</p>
+    </div>
+    
+  </div>
+</body>
+</html>
