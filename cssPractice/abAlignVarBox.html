@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+  <style type="text/css">
+    body {
+      position: relative;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .ct {
+      position:fixed;
+      top:50%;
+      left:50%;      
+      transform:translate(-50%,-50%);
+  
+      padding:20px;
+      background-color:#ccc;
+      
+      box-shadow: 3px 3px 3px rgba(0,0,0,0.3);   
+      border-radius: 8px;
+    }
+
+    .ct:hover {
+      box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+
+    .ct p,.ct h1 {
+      margin: 5px 0 ;
+    }
+  </style>
+</head>
+<body>
+<div class="ct">
+  <h1>我是内容</h1>
+  <p>我的宽高不固定</p>
+  <p>你爱固定不固定</p>
+  <p>不固定也得居中，就算你写很长也要居中</p>
+  <p>再写一行也要居中</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style type="text/css">
+    .ct {
+      border: 1px solid #999;
+      width: 200px;
+      height: 100px;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    .ct1:before {
+
+      position: absolute;
+      left: 10px;
+      top: -10px;
+      transform: rotate(45deg);
+      
+      content: "";
+     
+      width: 0px;
+      height: 0px;
+      
+      border-top: 10px #999 solid;
+      border-left: 10px #999 solid;
+      border-bottom: 10px white solid;
+      border-right: 10px white solid;
+      
+    }
+
+    .ct2:before {
+
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      
+      content: "";
+     
+      width: 0px;
+      height: 0px;
+      
+      border-top:10px red solid;
+      border-left:10px white solid;
+      border-bottom:10px white solid;
+      border-right:10px red solid;
+      
+    }
+
+    .ct3:before {
+
+      position: absolute;
+      left: 10px;
+      top: -9px;
+      transform: rotate(45deg);
+      
+      content: "";
+     
+      width: 15px;
+      height: 15px;
+      
+      padding: 0;
+      
+      border-top: 1px #999 solid;
+      border-left: 1px #999 solid;
+      
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="ct ct1"></div>
+<div class="ct ct2"></div>
+<div class="ct ct3"></div>
+</body>
+</html>
